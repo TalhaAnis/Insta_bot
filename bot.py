@@ -8,8 +8,7 @@ class instaBot:
         self.password = password
         self.driver = webdriver.Chrome('./chromedriver')
         self.login()
-        print("hi")
-
+        
     def login(self):
         self.driver.get('https://www.instagram.com/accounts/login/')
         self.driver.find_element_by_name('username').send_keys(self.username)
